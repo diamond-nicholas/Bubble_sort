@@ -37,5 +37,3 @@ The Odin Project
 
 ## 📝 License MIT
 This project is [MIT](./LICENSE) licensed.
-
-Microverse Capstone Project
