@@ -3,15 +3,14 @@ def bubble_sort(array)
     loop do
   swapped = false
     (n - 1).times do |i|
-  if array[i] > array[i + 1]
-  array[i], array[i + 1] = array[i + 1], array[i]
-            swapped = true
+        if array[i] > array[i + 1]
+    array[i], array[i + 1] = array[i + 1], array[i] swapped = true
         end
     end
-    break if  ! swapped
-    end
+    break if !swapped
+    end    
     array
-    end
+end
 a = [1, 9, 1, 6, 7, 9, 6, 8]
 p bubble_sort(a)
 
@@ -19,7 +18,7 @@ def bubble_sort_by(arr)
   j = arr.length - 1
 
   while j.positive?
-  (0...j).each do |i|
+    (0...j).each do |i|
   arr[i], arr[i + 1] = arr[i + 1], arr[i] if yield(arr[i], arr[i + 1]).positive?
   end
   j -= 1
