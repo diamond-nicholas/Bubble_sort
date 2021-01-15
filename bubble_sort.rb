@@ -13,8 +13,6 @@ def bubble_sort(array)
   end
   array
 end
-a = [1, 9, 1, 6, 7, 9, 6, 8]
-p bubble_sort(a)
 
 def bubble_sort_by(arr)
   j = arr.length - 1
@@ -31,4 +29,4 @@ end
 new_bubble_sort_by = bubble_sort_by(%w[hi hello hey]) do |left, right|
   left.length - right.length
 end
-p new_bubble_sort_by
+
